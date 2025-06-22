@@ -13,7 +13,7 @@ const errorHandler = (
     });
     return;
   }
-
+  console.error(err);
   res.status(400).json({
     errors: [{ message: err.message || 'Something went wrong' }],
   });

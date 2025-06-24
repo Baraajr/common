@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc",
     "clean": "del-cli ./build/*",
-    "pub": "git add . && git commit -m \"updates\" && npm version patch && npm publish"
+    "pub": "tsc && git add . && git commit -m \"updates\" && npm version patch && npm publish"
   },
   "keywords": [],
   "author": "",
